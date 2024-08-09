@@ -1,1 +1,1 @@
-console.log("This is PURE Websites");
+console.log("Update This is PURE Websites");
