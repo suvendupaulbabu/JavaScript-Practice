@@ -6,7 +6,7 @@ let number = 40;
 let numberToString = String(number);
 
 
-console.table([typeof score, typeof(score), typeof valueInNumber, valueInNumber, convertIsLoggedIn, typeof numberToString, numberToString]);
+//console.table([typeof score, typeof(score), typeof valueInNumber, valueInNumber, convertIsLoggedIn, typeof numberToString, numberToString]);
 
 /* 
 * Note (Using Number Methods return value type)
@@ -23,3 +23,27 @@ Note If need to convert boolean value
 0 => false, 1 => true
 ""(empty string) => false, "Suvendu" => true
 */
+
+
+// ********************************************* Operations *********************************************
+let value = 3;
+let negativeValue = -value;
+// console.log(negativeValue);
+
+//console.log("1" + 1 + 2);
+//console.log(1 + 2 + "2");
+//console.log(+"");
+
+let gameCounter = 100;
+++gameCounter;
+//console.log(gameCounter);
+
+// Postfix (x++) Example
+let postfix_value = 3;
+let postfixIsAssigned = postfix_value++;
+console.log(`${postfix_value} : ${postfixIsAssigned}`);
+
+// Prefix (++x)
+let prefix_value = 3;
+let prefixIsAssigned = ++prefix_value;
+console.log(`${prefix_value} : ${prefixIsAssigned}`);
