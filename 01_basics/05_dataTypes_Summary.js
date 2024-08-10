@@ -41,3 +41,35 @@ const testFunc01 = function(){
     console.log('Hello World');
 }
 console.log(testFunc01);
+
+const strValue01 =  "Suvendu";
+const strValueIsConvert = strValue01.substring(0, 5);
+console.log(strValueIsConvert);
+
+// Concat
+const arr01 = ["ouais ouais", "nan nan"];
+const arr02 = ["generation", "nan nan"];
+const arr03 = arr01.concat(arr02);
+console.log(arr03);
+
+/*
+JavaScript Memory management
+In JavaScript have two types of Memory 01.Stack (Primitive) 02.Heap (Reference (Non Primitive))
+*/
+
+// Using Primitive data type value is not updated for both variables
+const user01 = "Babu";
+let user02 = user01;
+user02 = "Suvendu";
+console.log(user01);
+console.log(user02);
+
+// Using Reference (Non Primitive) data type value is updated for both variables
+const obj01 = {
+    name: "PURE",
+    email: "pure@gmail.com"
+}
+let obj02 = obj01;
+obj02.name = "Suvendu";
+console.log(obj01);
+console.log(obj02);
