@@ -1,4 +1,26 @@
 const laptopName = new String("My-Laptop"); //Using new String() method we convert string to object
+
+//String.prototype.anchor()
+const contentString = "Hello, world"; 
+//console.log(contentString.anchor('Hello'));
+
+//String.prototype.at()
+let index = 7;
+//console.log(`An index of ${index} returns the character ${contentString.at(index)}`);
+
+//String.prototype.concat()
+const str1 = 'Hello';
+const str2 = 'World';
+//console.log(str1.concat(' ', str2));
+
+//String.prototype.matchAll()
+const regexp = /t(e)(st(\d?))/g;
+const str = 'test1test2';
+const array = [...str.matchAll(regexp)];
+//console.log(array[0]);
+//console.log(array[1]);
+
+
 //console.log(laptopName[0]);
 //console.log(laptopName__proto__); 
 //console.log(laptopName.length);
@@ -17,4 +39,4 @@ const my_url =  "https://demo.com/demo%20check"
 const my_url_modify = my_url.replace('%20', '-'); // Using replace method() we check and remove mention string value as set first inside replace() method and 2nd one which print after replace
 //console.log(my_url_modify);
 //console.log(my_url.includes('hi')); // Using includes() method we check that perticular string value is have inside another string or not
-console.log(laptopName.split('-')); // Using split() method we can convert string to array, but it's based on here '-', but it will be any thing else also
+//console.log(laptopName.split('-')); // Using split() method we can convert string to array, but it's based on here '-', but it will be any thing else also
