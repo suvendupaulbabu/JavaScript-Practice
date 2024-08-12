@@ -19,12 +19,19 @@ const numberHundredLocalString = numberHundred.toPrecision(4)
 //console.log(numberHundred.toLocaleString('en-IN'))
 
 /***********   Maths   */
-console.log(Math);
+//console.log(Math);
 //console.log(Math.abs(-10)); // It's convert nagetive to positive value
 //console.log(Math.round(5.51)); // It's round number and remove after demical number
 //console.log(Math.ceil(5.1)); // It's convert 5.1 to 6 because of it's ceil this number
 //console.log(Math.floor(5.9)); // It's convert 5.1 to 5 because of it's floor this number
 //console.log(Math.SQRT2);
-console.log(Math.min(2, 5, 9, 1)); // It's check minumum value of array
-console.log(Math.max(2, 5, 8, 9)); // It's check maximum value of array
+//console.log(Math.min(2, 5, 9, 1)); // It's check minumum value of array
+//console.log(Math.max(2, 5, 8, 9)); // It's check maximum value of array
+//console.log(Math.random());
+//console.log((Math.random() * 10) + 1); // Because Math.random() method always return number between 0 to 1
+//console.log(Math.floor((Math.random() * 10) + 1));
 
+const min = 10
+const max = 20
+const minVal10_OR_above = Math.floor(Math.random() * (max - min + 1) + min)
+console.log(minVal10_OR_above);
