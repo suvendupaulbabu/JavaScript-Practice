@@ -18,14 +18,11 @@ const myArr2 = new Array(1, 2, 3, 4)
 //console.log(typeof newArray);
 
 // slice, splice
-
+console.log("Original Array", myArr)
 
 const myNewArr1 = myArr.slice(1, 3) // slice() method working two value, first one is set from array index and 2nd one up-to end index, like myArr 1st index have 0 2nd index have and 4th have 3
 //console.log("A", myArr)
 //console.log("B", myArr);
-
-console.log("Original Array", myArr)
-
 console.log('slice', myNewArr1)
 console.log("B", myArr)
 
