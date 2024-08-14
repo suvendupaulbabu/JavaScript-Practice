@@ -75,10 +75,10 @@ const numberArray = [1, 2, 3, 4, 2, 5, 4, 6, 5, 8, 7, 8, 8, 9, 10]
 const removeDuplicateArray = numberArray.filter((value, index, arr) => {
     return arr.indexOf(value) === index
 
-    //console.log('condition : ', arr.indexOf(index))
+    //console.log('condition : ', arr.indexOf(value))
     //console.log('check value : ', value)
     //console.log('Break');
-
+    //console.log('Get array value using index : ', arr.indexOf(value))
     //console.log('Value', value);
     //console.log('Index', index);
     //console.log('Array', arr);
