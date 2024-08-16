@@ -84,3 +84,18 @@ const removeDuplicateArray = numberArray.filter((value, index, arr) => {
     //console.log('Array', arr);
 })
 console.log(removeDuplicateArray);
+
+// Array forEach() method
+const arrayList = ['a', 'b', 'c', 'd']
+arrayList.forEach((element) => {
+    //console.log(element)
+})
+
+// Array map() method
+const arrayList1 = [2, 5, 8, 1]
+// Pass a function to map
+const map1 = arrayList1.map((x) => 
+    //`Return Number ${e * 2}`
+    x * 2
+)
+console.log(map1);
