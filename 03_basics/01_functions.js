@@ -16,13 +16,16 @@ const resultTwoNum = addTwoNumbers(5, 9) // Here inside parentheses whatever wri
 //console.log("Result", resultTwoNum)
 
 // Another function()
-const userLoggedIN = true
-function loginUserMSG(){
-    userLoggedIN == true ? console.log('You successfully logged in') : console.log('Please log in')
-    // if (userLoggedIN == true) {
-    //     console.log('You successfully logged in')
-    // }else{
-    //     console.log('Please log in')
-    // }
+// const userLoggedIN = true
+// function loginUserMSG(){
+//     userLoggedIN == true ? console.log('You successfully logged in') : console.log('Please log in')
+// }
+// console.log(loginUserMSG());
+
+const userLoggedStatus = false
+function loginUserMSG(userName){
+    let userLoggedIN = userLoggedStatus === true ? `${userName} logged in` : `${userName} logged out`
+    //return `${userName} logged in`
+    return userLoggedIN
 }
-console.log(loginUserMSG());
+console.log(loginUserMSG("Suvendu Paul"))
