@@ -52,7 +52,7 @@ const fetchArrObj = arrOBJ.map((item) =>{
     //console.log(Object.keys(item));
     //console.log(Object.values(item));
     //console.log(Object.values(item).length);
-    console.log(Object.entries(item));
+    //console.log(Object.entries(item));
 })
 
 //console.log(arrOBJ[0]);
@@ -60,3 +60,82 @@ const fetchArrObj = arrOBJ.map((item) =>{
 //console.log(Object.values(arrOBJ[0]));
 //console.log(Object.hasOwn(arrOBJ[0], 'isLoggedIN'))
 //console.log(arrOBJ[0].hasOwnProperty('isLoggedIN'))
+
+// Object Sample
+const course = {
+    courseName : "Js", 
+    courseDuration : 72, 
+    courseInstructor : "YouTube"
+}
+// Object De-structure
+const {courseInstructor} = course // Syntax 01
+const {courseInstructor: instructor} = course // Syntax 02
+console.log(instructor)
+
+// Sample API
+/*{
+    "results": [
+      {
+        "gender": "female",
+        "name": {
+          "title": "Miss",
+          "first": "Pilar",
+          "last": "Cano"
+        },
+        "location": {
+          "street": {
+            "number": 5249,
+            "name": "Avenida de Burgos"
+          },
+          "city": "Cartagena",
+          "state": "Cantabria",
+          "country": "Spain",
+          "postcode": 71285,
+          "coordinates": {
+            "latitude": "-38.0915",
+            "longitude": "5.8548"
+          },
+          "timezone": {
+            "offset": "0:00",
+            "description": "Western Europe Time, London, Lisbon, Casablanca"
+          }
+        },
+        "email": "pilar.cano@example.com",
+        "login": {
+          "uuid": "c1168124-a3fa-4152-9e83-fc51108f323a",
+          "username": "brownwolf787",
+          "password": "kokoko",
+          "salt": "m9Ngviw4",
+          "md5": "20dfc7d18bb527a40bc897489bd49dd2",
+          "sha1": "1c5728626d05177985ca4edd8af29d7c18377df5",
+          "sha256": "8091bc3821c169669d81259113ebdda798088c98a1e6d00e946243c46ba34563"
+        },
+        "dob": {
+          "date": "1964-10-09T19:51:10.370Z",
+          "age": 59
+        },
+        "registered": {
+          "date": "2003-09-07T19:35:52.875Z",
+          "age": 20
+        },
+        "phone": "905-921-261",
+        "cell": "623-213-925",
+        "id": {
+          "name": "DNI",
+          "value": "40746338-T"
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/7.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+        },
+        "nat": "ES"
+      }
+    ],
+    "info": {
+      "seed": "b5f0e64a3b6a6dbb",
+      "results": 1,
+      "page": 1,
+      "version": "1.4"
+    }
+}*/
