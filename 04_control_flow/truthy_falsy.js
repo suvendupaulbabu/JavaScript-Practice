@@ -42,12 +42,27 @@ if(Object.keys(emptyOBJ).length === 0){
 }
 
 // Nullish Coalescing Operator (??): null && undefined
-const foo = null ?? 'default string';
-console.log(foo);
+// Defination : The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand
+function returnEmpty(number01, number02){
+    return number01 + number02
+}
+console.log('check null : ', returnEmpty(0, null))
 
-let val01;
+
+function getMoney(number01, number02){
+    return number01 + number02
+}
+
+let earnMoney
+earnMoney = null ?? getMoney(5, 5) ?? 'default string'
+console.log(earnMoney)
+
+/*const foo = null ?? 'default string';
+console.log(foo)*/
+
+/*let val01;
 val01 = 5 ?? 10
-console.log('Check Val : ', val01)
+console.log('Check Val : ', val01)*/
 
 
 // Terniary Operator
