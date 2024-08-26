@@ -3,9 +3,9 @@ const userEmail = function(){}
 
 // Condition
 if(userEmail){
-    console.log('Got user e-mail')
+    //console.log('Got user e-mail')
 }else {
-    console.log("Don't have user e-mail")
+    //console.log("Don't have user e-mail")
 }
 
 // Falsy Value
@@ -38,23 +38,28 @@ const emptyOBJ = {}
 
 // Here using Object.keys return an array, and then check return array length and type === 0 or not
 if(Object.keys(emptyOBJ).length === 0){
-    console.log('Object is empty')
+    //console.log('Object is empty')
 }
 
 // Nullish Coalescing Operator (??): null && undefined
 // Defination : The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand
-function returnEmpty(number01, number02){
-    return number01 + number02
+/*function returnNULL(num1, num2) {
+    if (arguments.length < 2) {
+      return null;
+    }
+    return num1/num2;
 }
-console.log('check null : ', returnEmpty(0, null))
+console.log('Return Null : ', returnNULL(5, 5))*/
 
+let returnNULL
+console.log(returnNULL)
 
 function getMoney(number01, number02){
     return number01 + number02
 }
 
 let earnMoney
-earnMoney = null ?? getMoney(5, 5) ?? 'default string'
+earnMoney = returnNULL ?? 'Congratulations you earn Rs.' + getMoney(5, 5) ?? 'default string'
 console.log(earnMoney)
 
 /*const foo = null ?? 'default string';
@@ -68,4 +73,4 @@ console.log('Check Val : ', val01)*/
 // Terniary Operator
 // condition ? true : false
 const iceTeaPrice = 100
-iceTeaPrice <= 80 ? console.log('less then 80') : console.log('more then 80')
+//iceTeaPrice <= 80 ? console.log('less then 80') : console.log('more then 80')
