@@ -27,9 +27,9 @@ if(userEmail){
 03. " " => If inside semiclone have a space it's also truthy value
 04. []/{} => Empty array/object is also truthy value
 05. function(){} => Empty function is also truthy value
-06. 
-07. 
-08. 
+06. false == 0 => Return true
+07. false == '' => Return true
+08. 0 == '' => Return true
 */
 
 // How to check empty object
@@ -40,3 +40,17 @@ const emptyOBJ = {}
 if(Object.keys(emptyOBJ).length === 0){
     console.log('Object is empty')
 }
+
+// Nullish Coalescing Operator (??): null && undefined
+const foo = null ?? 'default string';
+console.log(foo);
+
+let val01;
+val01 = 5 ?? 10
+console.log('Check Val : ', val01)
+
+
+// Terniary Operator
+// condition ? true : false
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log('less then 80') : console.log('more then 80')
